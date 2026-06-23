@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+body {
+  background-color: rgba(245, 245, 245, 1);
+  font-family: "Open Sans", sans-serif;
+}
+
+.container-custom {
+  @apply w-full mx-auto px-15 py-30;
+}
