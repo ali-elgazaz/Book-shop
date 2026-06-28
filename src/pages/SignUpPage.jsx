@@ -4,7 +4,7 @@ import SignUp from "../components/SignUp";
 const SignUpPage = () => {
   return (
     <div>
-      <Hero height="h-[330px] " />
+      <Hero size="medium" />
       <SignUp />
     </div>
   );

@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 const ForgetPasPage = () => {
   return (
     <div>
-      <Hero height="h-[330px]" />
+      <Hero size="medium" />
       <ForgetPas />
     </div>
   );

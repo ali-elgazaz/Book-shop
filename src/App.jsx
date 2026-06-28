@@ -7,7 +7,7 @@ import Sale from "./components/Sale";
 function App() {
   return (
     <>
-      <Hero height="h-screen" />
+      <Hero size="large" />
       <Policy />
       <BestSeller />
       <Recommended />

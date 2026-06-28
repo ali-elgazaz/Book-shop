@@ -4,7 +4,7 @@ import LogIn from "../components/LogIn";
 const LogInPage = () => {
   return (
     <div>
-      <Hero height="h-[330px] " />
+      <Hero size="medium" />
       <LogIn />
     </div>
   );

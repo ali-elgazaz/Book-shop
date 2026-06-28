@@ -32,7 +32,7 @@ const ForgetPas = () => {
     // Success
     setSuccess("Reset code sent successfully");
     setTimeout(() => {
-      navigate("/reset-password");
+      navigate("/reset-code");
     }, 2000);
   };
   return (

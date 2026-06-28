@@ -6,7 +6,8 @@ import AboutPage from "../pages/AboutPage";
 import LogInPage from "../pages/LogInPage";
 import SignUpPage from "../pages/SignUpPage";
 import ForgetPasPage from "../pages/ForgetPasPage";
-import ResetPasPage from "../pages/ResetPasPage";
+import ResetCodePage from "../pages/ResetCodePage";
+import ResetPassPage from "../pages/ResetPassPage";
 
 const AppRouter = () => {
   return (
@@ -19,7 +20,8 @@ const AppRouter = () => {
           <Route path="login" element={<LogInPage />} />
           <Route path="Signup" element={<SignUpPage />} />
           <Route path="forgetPas" element={<ForgetPasPage />} />
-          <Route path="reset-password" element={<ResetPasPage />} />
+          <Route path="reset-code" element={<ResetCodePage />} />
+          <Route path="reset-password" element={<ResetPassPage />} />
         </Route>
         <Route path="*" element={<h2>Not found page</h2>} />
       </Routes>

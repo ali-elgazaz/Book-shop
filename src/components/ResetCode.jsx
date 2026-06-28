@@ -1,8 +1,11 @@
 import { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const ResetPas = () => {
+const ResetCode = () => {
   const [otp, setOtp] = useState(["", "", "", ""]);
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+  const navigate = useNavigate();
 
   const inputsRef = useRef([]);
 
@@ -27,7 +30,6 @@ const ResetPas = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const code = otp.join("");
 
     if (code.length < 4) {
@@ -39,6 +41,11 @@ const ResetPas = () => {
 
       return;
     }
+
+    setSuccess("Code verified successfully");
+    setTimeout(() => {
+      navigate("/reset-password");
+    }, 3000);
   };
   return (
     <section className="min-h-screen flex items-center justify-center px-4">
@@ -67,6 +74,8 @@ const ResetPas = () => {
 
           {error && <p className="text-red-500 text-sm mt-4">{error}</p>}
 
+          {success && <p className="text-green-600 text-sm mt-4">{success}</p>}
+
           <button
             type="submit"
             className="w-full mt-8 bg-pink-600 hover:bg-pink-700 transition-all text-white font-semibold py-3 rounded-lg"
@@ -86,4 +95,4 @@ const ResetPas = () => {
   );
 };
 
-export default ResetPas;
+export default ResetCode;
